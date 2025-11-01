@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Courier New', Courier, monospace;
+            line-height: 1.7;
+            color: #333;
+        }
+
+        .name{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        
+        header{
+            color: black;
+            position: fixed;
+            width: 100%;
+            padding: 16px;
+            background-color: #cabbbb;
+        }
+
+        nav{
+            display: flex;  
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        section{
+            padding: 100px 20px 30px;
+            text-align: center;
+        }
+        .nav-link{
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+        .nav-link a{
+            color: black;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-weight: bold;
+        }
+        .nav-link a:hover{
+            color:#8c8383
+        }
+        fieldset{
+            margin: 10px;
+            font-weight: bold;
+            width: 50%;
+            margin-left: 350px;
+            border-radius: 10px;
+            border: solid 1px #333;
+         
+        }
+        .project-section{
+            align-items: center;
+            max-width: 90%;
+        }
+
+        .project-section a{
+            text-decoration: none;
+            color:#333
+        }
+        .project-section a:hover{
+            color:#8c8383
+        }
+        .course-token{
+        width: fit-content;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: left;
+        list-style: none;
+        }
+
+        .contact-info{
+            display:flex;
+            align-items: center;
+            font-weight: bold;
+            text-decoration: none;
+            gap:20px;
+            justify-content: space-between;
+        }
+
+        .contact-info p{
+            margin-right:auto;
+        }
+
+        .contact-info a{
+            text-decoration: none;
+            color:#333
+        }
+
+        .contact-info a:hover{
+            color:#9d9999
+        }
+
+        img{
+           width:100px;
+        }
+
+        .email-sending{
+            margin-top: 70px;
+            gap: 30px;
+            justify-content: center;
+            padding: 30px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+
+        input, textarea {
+            width: 30%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #333;
+            border-radius: 10px;
+            font-size: 14px;
+            box-sizing: border-box;
+           
+        }
+        label {
+            display: block;
+            margin-bottom: 20px;
+            color: #555;
+        }
+        
+        button{
+            background-color: #5c94ae;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px
+        }
+        button:hover{
+            background-color:#82b1c6;
+        }
+
+        input{
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <header>
+            <nav> 
+            <div class="name">Chhun Menghour</div>
+                 <ul class="nav-link">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="home">
+                <h1>Software Developer</h1>
+                <p>I'm a university student passionate about web development, aiming to become a frontend developer after graduation. I enjoy creating clean, responsive, and user-friendly websites using HTML, CSS, and JavaScript.</p>
+            </section>
+            <section id="projects">
+                <h2>Projects</h2>
+                <div class="project-section">
+                    <fieldset>
+                        <a href="#">HTML Only Portfolio</a>
+                    </fieldset>
+                    <fieldset>
+                        <a href="#">Calculator</a>
+                    </fieldset>
+                    <fieldset>
+                        <a href="#">Quiz app</a>
+                    </fieldset>
+                    <fieldset>
+                        <a href="#">Countdown Timer</a>
+                    </fieldset>
+                    <fieldset>
+                        <a href="#">Product Upcoming Page</a>
+                    </fieldset>
+                </div>
+            </section>            
+
+            <section id="education">
+                <h1>Education</h1>
+                    <p>Graduated with 3.76 out of 4 GPA. Won Acme Hackathon.<br>
+                        Organized 30 sesssions.<br><br>
+                        Couse I took:<br></p>
+                <ul class="course-token">
+                    <li>- Object Oriendted Programming</li>
+                    <li>- Data Structure</li>
+                    <li>- Web Engineering</li>
+                    <li>- Software Engineering</li>
+                    <li>- Database</li>
+                    <li>- Back-end</li>
+                </ul>
+            </section>
+
+            <section id="contact">
+                <h1>Contact me</h1><br>
+                <div class="contact-info">
+                    <img src="https://cdn-icons-png.flaticon.com/128/5968/5968764.png">
+                    <p><a href="#">Menghour Chhun</a></p>
+
+                    <img src="https://cdn-icons-png.flaticon.com/128/174/174855.png">
+                    <p><a href="#">Chhun Menghour</a></p>
+
+                    <img src="https://cdn-icons-png.flaticon.com/128/5968/5968804.png">
+                    <p><a href="#">Chhun Menghour</a></p>
+                </div>
+                <br><br>
+
+                <h1>Send me an email</h1>
+                <div class="email-sending">
+                    <label>
+                        Your name:<br>
+                        <input type="text">
+                    </label>
+                    <label>
+                        Email:<br>
+                        <input type="email">
+                    </label>
+                    <label>
+                        Your text:<br>
+                        <textarea></textarea>
+                    </label>
+                    <button>Submit</button>
+                </div>
+            </section>
+        </main>
+    </table>
+</body>
+</html>
